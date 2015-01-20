@@ -1,15 +1,15 @@
 ## fossilizid ##
 
-fossilizid: a open source c++ library start by qianqians
+fossilizid: an open source c++ library started by qianqians
 
 ----------
 
 Getting Started
 ---------------
 
-clone this repo
+clone this repository
 
-git clone https://github.com/NetEase/fossilizid
+    $ git clone https://github.com/NetEase/fossilizid
 
 
 ----------
@@ -20,7 +20,7 @@ https://github.com/NetEase/fossilizid/tree/master/doc
 
 ---
 container: lock-free structure
-  
+
  - msque
  - optimisticque
  - ringque
@@ -31,13 +31,13 @@ container: lock-free structure
 context: corotinue
 
 ----------
-pool: mempool&&objpool
+pool: mempool & objpool
 
  - mempool
  - factory
 
 ----------
-remoteq: network library  
+remoteq: network library
 
 ---------- 
 reduce: reduce service
