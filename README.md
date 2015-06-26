@@ -1,26 +1,26 @@
 ## fossilizid ##
 
-fossilizid: a open source c++ library start by qianqians
+fossilizid: an open source c++ library started by qianqians
 
 ----------
 
 Getting Started
 ---------------
 
-clone this repo
+clone this repository
 
-git clone http://git.mt.nie.netease.com/wmn0377/fossilizid
+    $ git clone https://github.com/NetEase/fossilizid
 
 
 ----------
 
 Document
 --------
-http://git.mt.nie.netease.com/wmn0377/fossilizid/fossilizid/doc
+https://github.com/NetEase/fossilizid/tree/master/doc
 
 ---
 container: lock-free structure
-  
+
  - msque
  - optimisticque
  - ringque
@@ -31,13 +31,13 @@ container: lock-free structure
 context: corotinue
 
 ----------
-pool: mempool&&objpool
+pool: mempool & objpool
 
  - mempool
  - factory
 
 ----------
-remoteq: network library  
+remoteq: network library
 
 ---------- 
 reduce: reduce service
@@ -53,7 +53,9 @@ vchat: voice chat framework
 Contact me
 ----------
 
-anxiangqq@gmail.com
+ - mail: anxiangqq@gmail.com 
+ - QQ: 451517996 
+ - fossilizid QQ group: 257079284
 
 ----------
 License

@@ -37,7 +37,7 @@ public:
 	 */
 	template<class T, typename ...Tlist>
 	static T * create(Tlist&& ... var){
-		T * p = mempool::allocator(sizeof(T));
+		T * p = (T*)mempool::allocator(sizeof(T));
 
 		new(p) T(std::forward<Tlist>(var)...);
 

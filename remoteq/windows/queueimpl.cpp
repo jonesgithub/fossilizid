@@ -42,7 +42,7 @@ EVENT queue(QUEUE que){
 	DWORD bytes = 0;
 	ULONG_PTR ptr = 0;
 	LPOVERLAPPED ovp = 0;
-	if (GetQueuedCompletionStatus(impl->iocp, &bytes, &ptr, &ovp, 25)){
+	if (GetQueuedCompletionStatus(impl->iocp, &bytes, &ptr, &ovp, 0)){
 		overlappedex * ovlp = static_cast<overlappedex *>(ovp);
 		
 		if (ovlp->type == iocp_type_accept){

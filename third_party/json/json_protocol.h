@@ -12,6 +12,8 @@
 
 #include <boost/bind.hpp>
 
+#include <list>
+
 namespace Fossilizid{
 namespace json_parser{
 

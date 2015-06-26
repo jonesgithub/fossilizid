@@ -1,0 +1,6 @@
+module juggle{
+	void rpctest1(int argv1, bool argv2, string argv3, float argv4, array<int> argv5);
+
+	void rpctest2(int argv1, bool argv2, string argv3, float argv4, array<int> argv5);
+
+}

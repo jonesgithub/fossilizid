@@ -17,7 +17,7 @@
 #endif
 
 namespace Fossilizid{
-namespace reduce {
+namespace uuid {
 
 uuid UUID(){
 	std::string _uuid;
@@ -68,22 +68,17 @@ uuid UUID(){
 	}
 
 	{
-		_uuid[14] = (char)rand();
+		_uuid[14] = (char)rand() + 1;
 	}
 
 	{
-		static volatile unsigned char key = 1;
+		static unsigned char key = 1;
 		_uuid[15] = key++;
-	}
-
-	for (int i = 0; i < 16; i++){
-		if (_uuid[i] == 0){
-			_uuid[i] = 1;
-		}
+		key = (key == 0) ? 1 : key;
 	}
 
 	return _uuid;
 }
 
-} /* namespace reduce */
+} /* namespace juggle */
 } /* namespace Fossilizid */
